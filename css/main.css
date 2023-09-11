@@ -13,16 +13,213 @@ body {
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: rgb(35, 35, 85);
+    color: #086747;
 }
 
-span {
-    font-size: .9rem;
-    font-weight: 700;
-    color: rgb(35, 35, 85);
+h5 {
+    font-size: 1.2rem;
+    color: #086747;
 }
 
 h6 {
     font-size: 1rem;
-    color: rgb(24, 24, 49);
+    color: #086747;
+}
+
+
+span {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #086747;
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+/*
+nav a {
+    text-decoration: none;
+}
+*/
+
+nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .nav-items ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .nav-items ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .nav-items ul li a {
+    color: #086747;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav .nav-items a:hover {
+    color: #a9b943;
+    transition: 0.5s ease-in-out;
+}
+
+#homepagina {
+    background-image: linear-gradient(rgba(140, 240, 162, 0.7), rgba(0, 0, 0, 0.6)), url("../images/bg.avif");
+    height: 100vh;
+    width: 100%;
+    padding-top: 1%;
+    background-position: center;
+    background-size: cover;
+    /* positionering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.home-titel {
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+    font-size: 3rem;
+}
+
+.home-text {
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 20px;
+    color: whitesmoke;
+}
+
+.btn-homepagina {
+    line-height: 40px;
+}
+
+.anchor-1 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 13px 35px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+.anchor-2 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 13px 35px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+.anchor-1 {
+    color: whitesmoke;
+    background: #086747;
+}
+
+.anchor-1:hover {
+    color: #086747;
+    background: #a9b943;
+    transition: 0.8s ease;
+}
+
+.anchor-2 {
+    color: whitesmoke;
+    background: #a9b943;
+}
+
+.anchor-2:hover {
+    color: #a9b943;
+    background: #086747;
+    transition: 0.8s ease;
+}
+
+#studenten {
+    padding: 2vw 2vw 50px 2vw;
+}
+
+#studenten .studenten-grid {
+    /* grid-box hier voor de studenten profielen */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 40px;
+}
+
+#studenten .studenten-grid .studenten-profiel {
+    background: #fafaf1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 15px 10px;
+    width: 50%;
+}
+
+#studenten .studenten-profiel img {
+    width: 50%;
+    border-radius: 12px;
+    /*display: block;*/
+    /*position: relative;*/
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 4vw;
+    background: #086747;
+}
+
+footer h3 {
+    color: whitesmoke;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+footer li {
+    color: whitesmoke;
+    font-weight: 300;
+    list-style: none;
+    padding: 8px 0; /* 0 is zodat het goed aligned met de h3 erboven -Emirhan */
+    font-size: 15px;
+    cursor: pointer;
+}
+
+footer li:hover {
+    color: #a9b943;
+    transition: 0.3s ease-in;
+    text-decoration: underline;
+}
+
+/*
+geen zin om extra CSS voor dit te implementeren
+
+footer li:visited {
+    color: #a9b943;
+}
+*/
+footer .footer-kolom {
+    padding-bottom: 0.4rem;
+}
+
+footer .footer-logo {
+    border-radius: 12px;
 }
